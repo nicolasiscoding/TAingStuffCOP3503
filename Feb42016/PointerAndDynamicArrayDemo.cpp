@@ -69,9 +69,11 @@ int main()
 
   //For every 'new', call a 'delete' when you are done
 
-  delete array;
+  delete array[];
 
-  //There you go! We reclaied space to the OS!
+  //if this was a single dynamic object, you would call 'delete'. Not 'delete[]'
+
+  //There you go! We reclaimed space to the OS!
 
 
   //How do you think we could declare a 2D dynamic array??
