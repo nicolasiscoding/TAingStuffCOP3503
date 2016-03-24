@@ -34,18 +34,17 @@ template <typename T>
 stack<T>::stack()
 {
   //initializing by nulling out pointer
-  top = 0;
+	size = 0;
+  	top = 0;
 }
 
 template <typename T>
 stack<T>::~stack()
 {
   //Delete all the nodes in the stack
-  while(top != 0)
+  while(getSize() != 0)
   {
-    node* toDelete = top;
-    top = top->next;
-    delete toDelete;
+    pop();
   }
 
 }
